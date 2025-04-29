@@ -39,6 +39,9 @@ This project is part of a university course on Digital Data Processing (Traiteme
 - PCA revealed that the first two components capture approximately 70% of the variance
 - The most influential hardware features were MMAX (max memory), CACH (cache size), and CHMIN (min channels)
 
+## 📎 License
+
+This project is intended for academic and educational use only.
 
 
 
