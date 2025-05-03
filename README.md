@@ -28,15 +28,20 @@ This project is part of a university course on Digital Data Processing (Traiteme
 
 ## 📊 Models Used
 
-- Multiple Linear Regression
-- Random Forest Regressor
-- Principal Component Analysis (PCA)
+- **Multiple Linear Regression** — simple and interpretable baseline model to predict PRP from hardware features.
+- **Random Forest Regressor** — non-linear model that improved prediction accuracy and provided insights on feature importance.
+- **Principal Component Analysis (PCA)** — dimensionality reduction technique used to explore data structure and visualize relationships between observations.
+- **K-means Clustering** — unsupervised method used to identify groups of similar computer configurations based on hardware.
+- **Univariate Statistical Analysis** — boxplots, histograms, and descriptive statistics to detect outliers, skewness, and justify data normalization.
+- **Correlation Matrix** — to evaluate feature relationships and check for multicollinearity or redundancy.
 
 
 ## 📈 Key Results
 
 - Random Forest achieved better predictive performance than Linear Regression (lower RMSE and higher R²)
 - PCA revealed that the first two components capture approximately 70% of the variance
+- Strong correlation observed between memory-related features and PRP
+- MYCT and CHMAX showed large variance and outliers
 - The most influential hardware features were MMAX (max memory), CACH (cache size), and CHMIN (min channels)
 
 ## 📎 License
