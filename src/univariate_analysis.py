@@ -70,3 +70,14 @@ for ax, img_path in zip(axs.flatten(), images_paths):
 plt.tight_layout()
 plt.savefig("figures/histogrammes_groupes.png")
 plt.show()
+
+# Matrice de corrélation
+corr_matrix = data.corr()
+
+# Affichage graphique
+plt.figure(figsize=(10, 7))
+sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".2f")
+plt.title("Matrice de corrélation des variables explicatives", fontsize=14 ,color='green')
+plt.tight_layout()
+plt.savefig(os.path.join(figures_path, "correlation_matrix.png"))
+plt.show()
